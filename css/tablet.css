@@ -1,0 +1,57 @@
+@media (max-width:800px)
+{
+    body
+    {
+        position: relative;
+    }
+    .city input
+    {
+        width: 180px;
+        height: 20px;
+    }
+
+    .btn
+    {
+        width: 70px;
+        height: 28px;
+    }
+
+    .weather
+    {
+        margin: 20px 10px;
+    }
+}
+
+@media (max-width:600px)
+{
+
+    #Temp {
+        font-size: 1rem;
+        right: 50px;
+    }
+
+    #Feel
+    {
+        font-size: 0.7rem;
+        right: 30px;
+    }
+
+    .box img
+    {
+        width: 150px;
+    }
+}
+
+@media (max-width:475px){
+    .Box
+    {
+        width: auto;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:375px){
+    .city input {
+        width: 90px;
+    }
+}

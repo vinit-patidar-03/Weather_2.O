@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/tablet.css">
+  <title>Know_Weather_of_your_City</title>
+</head>
+
+<body>
+  <div class="Name">
+    <h2>Weather</h2>
+  </div>
+    <div class="search">
+      <span class="city">
+        <img src="./images/search.png" title="search your city here" alt="">
+        <input type="text" placeholder="Enter Your City Name" id="input">
+      </span>
+      <button class="btn">Submit</button>
+    </div>
+  <h1 id="City">Indore</h1>
+  <section id="Weather">
+    <div class="box">
+      <div id="Temp">--°C</div>
+      <img src="./images/Day.png" id="bg" alt="">
+      <span id="Feel">feels like --°C</span>
+    </div>
+    <div class="Box">
+      <div class="box1">
+        <h3><i class="fa-solid fa-droplet fa-lg" title="Humidity"></i><span id="Humidity">--</span>%</h3>
+        <h3><i class="fa-solid fa-fan fa-lg" title="Wind_speed"></i><span id="wind_speed">--</span>km/hr</h3>
+        <h3><i class="fa-solid fa-cloud fa-lg" title="cloud_pct"></i><span id="cloud_pct">--</span>%</h3>
+      </div>
+      <div class="box2">
+        <h3><span id="time" title="Time"> --:--</span><i class="fa-solid fa-clock fa-lg"></i></h3>
+        <h3><span id="date" title="Date"> --/--/----</span><i class="fa-regular fa-calendar-days fa-lg"></i></h3>
+        <h3><span id="day" title="Day"> ---------</span><i class="fa-solid fa-star fa-lg"></i></h3>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    copyright &copy; 2023 made with <i class="fa-solid fa-heart" style="color: rgb(255, 0, 85);"></i> by Vinit Patidar
+  </footer>
+  <script src="https://kit.fontawesome.com/97c300a5fa.js" crossorigin="anonymous"></script>
+  <script src="./script/script.js"></script>
+</body>
+
+</html>
