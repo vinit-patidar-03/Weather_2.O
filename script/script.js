@@ -46,7 +46,7 @@ let getWeather = (city) => {
 			let body = document.getElementsByTagName('body');
 			let bg = document.getElementById('bg');
 			if (response.hour >= '06' && response.hour <= '18') {
-				body[0].style.background = "url('..././images/Day.jpg') no-repeat center/cover"
+				body[0].style.background = "url('.././images/Day.jpg') no-repeat center/cover"
 				bg.src = ".././images/Day.png"
 			}
 			else {
