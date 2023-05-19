@@ -27,7 +27,7 @@ let day = document.getElementById('day');
 let body = document.getElementsByTagName('body');
 let bg = document.getElementById('bg');
 body[0].style.background = "url('./images/Day.jpg') no-repeat center/cover"
-bg.src = "../images/Day.png"
+bg.src = "./images/Day.png"
 let getWeather = (city) => {
 	fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=' + city, options)
 		.then(response => response.json())
@@ -49,11 +49,11 @@ let getWeather = (city) => {
 			day.innerHTML = ' ' + response.day_of_week;
 			if (response.hour >= '06' && response.hour <= '18') {
 				body[0].style.background = "url('./images/Day.jpg') no-repeat center/cover"
-				bg.src = "../images/Day.png"
+				bg.src = "./images/Day.png"
 			}
 			else if(response.hour >= '18') {
 				body[0].style.background = "url('./images/Night.jpg') no-repeat center/cover"
-				bg.src = "../images/Moon.png"
+				bg.src = "./images/Moon.png"
 
 			}
 		})
