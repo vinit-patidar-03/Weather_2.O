@@ -24,6 +24,10 @@ let wind_speed = document.getElementById('wind_speed');
 let time = document.getElementById('time');
 let date = document.getElementById('date');
 let day = document.getElementById('day');
+let body = document.getElementsByTagName('body');
+let bg = document.getElementById('bg');
+body[0].style.background = "url('./images/Day.jpg') no-repeat center/cover"
+bg.src = "../images/Day.png"
 let getWeather = (city) => {
 	fetch('https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=' + city, options)
 		.then(response => response.json())
@@ -43,8 +47,6 @@ let getWeather = (city) => {
 			time.innerHTML = ' ' + response.hour + ':' + response.minute;
 			date.innerHTML = ' ' + response.day + '-' + response.month + '-' + response.year;
 			day.innerHTML = ' ' + response.day_of_week;
-			let body = document.getElementsByTagName('body');
-			let bg = document.getElementById('bg');
 			if (response.hour >= '06' && response.hour <= '18') {
 				body[0].style.background = "url('./images/Day.jpg') no-repeat center/cover"
 				bg.src = "../images/Day.png"
@@ -53,11 +55,6 @@ let getWeather = (city) => {
 				body[0].style.background = "url('./images/Night.jpg') no-repeat center/cover"
 				bg.src = "../images/Moon.png"
 
-			}
-			else
-			{
-				body[0].style.background = "url('./images/Day.jpg') no-repeat center/cover"
-				bg.src = "../images/Day.png"
 			}
 		})
 		.catch(err => console.error(err));
